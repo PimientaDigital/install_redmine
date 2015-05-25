@@ -8,6 +8,7 @@ mod "maestrodev/wget"
 mod "puppetlabs/git"
 mod "puppetlabs/puppetlabs-mysql"
 mod "jfryman/puppet-nginx"
+mod "PimientaDigital/vim"
 
 #mod 'puppetlabs/apache', '0.6.0',
   #:github_tarball => 'puppetlabs/puppetlabs-apache'
