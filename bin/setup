@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+PUPPET_DIR=provision/puppet/modules_contrib
+
+# Set up Ruby dependencies
+bundle install
+
+# Set up Ruby dependencies
+bundle install
+
+if [ "$(gem search -i librarian-puppet)" = "false" ]; then
+    bundler install
+else
+    bundler update
+fi
+
+vagrant plugin install vagrant-hostmanager
+
+librarian-puppet install --path $PUPPET_DIR
